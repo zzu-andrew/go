@@ -30,7 +30,7 @@ func main() {
 	fmt.Printf("%p\n", s4)
 	s4 = append(s4, 1, 2)
 	fmt.Printf("%p\n", s4)
-	s4 = append(s4, 3, 4, 5, 6, 7)  // 一旦扩容 长度会城北的增长
+	s4 = append(s4, 3, 4, 5, 6, 7) // 一旦扩容 长度会城北的增长
 	fmt.Printf("容量：%d, 长度：%d\n", cap(s4), len(s4))
 	fmt.Printf("%p\n", s4)
 	//	添加切片

@@ -16,7 +16,7 @@ func main() {
 	for i := 0; i < 100; i++ {
 		fmt.Println("\t主goroutine 打印字母。。。。。。。。。")
 	}
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 }
 
 func printNum() {

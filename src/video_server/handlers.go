@@ -17,7 +17,7 @@ func CreateUser(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 func Login(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	uname := p.ByName("user_name")
 	n, err := io.WriteString(w, "get user name ok")
-	if err != nil{
+	if err != nil {
 		fmt.Println(n)
 	}
 	fmt.Println(uname)

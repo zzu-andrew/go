@@ -12,5 +12,4 @@ type VideoInfo struct {
 	AuthorId     int
 	Name         string
 	DisplayCtime string
-
 }

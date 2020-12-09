@@ -5,8 +5,10 @@ import (
 	"sync"
 	"time"
 )
+
 // 读写锁
 var rwMutex *sync.RWMutex
+
 // 等待组
 var rwWg *sync.WaitGroup
 
@@ -31,18 +33,18 @@ func readData1(i int) {
 	rwMutex.RLock()
 	fmt.Println("read start......", i)
 	fmt.Println("读数据......", i)
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 	fmt.Println("读数据结束....", i)
 	rwMutex.RUnlock()
 
 }
 
-func writeData1(i int){
+func writeData1(i int) {
 	defer rwWg.Done()
 	rwMutex.Lock()
 	fmt.Println("开始：write data.....", i)
 	fmt.Println("正在写数据......", i)
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 	fmt.Println("写结束..........", i)
 	rwMutex.Unlock()
 }

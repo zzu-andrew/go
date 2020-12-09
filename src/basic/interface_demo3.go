@@ -24,7 +24,6 @@ func main() {
 	a3.test2()
 	a3.test3()
 
-
 }
 
 type AA1 interface {
@@ -49,10 +48,10 @@ func (c Cat12) test1() {
 	fmt.Println("test1.....")
 }
 
-func (c Cat12) test2()  {
+func (c Cat12) test2() {
 	fmt.Println("test2.....")
 }
 
-func (c Cat12) test3()  {
+func (c Cat12) test3() {
 	fmt.Println("test3......")
 }

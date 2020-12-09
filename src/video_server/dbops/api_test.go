@@ -1,10 +1,10 @@
 package dbops
 
 import (
-	"fmt"
-	"testing"
 	_ "database/sql"
+	"fmt"
 	_ "github.com/go-sql-driver/mysql"
+	"testing"
 )
 
 func clearTables() {
@@ -55,7 +55,7 @@ func testGetUserCredential(t *testing.T) {
 	if err != nil {
 		t.Error("get user name failed.")
 	}
-	fmt.Println("password is:",pwd)
+	fmt.Println("password is:", pwd)
 }
 
 func testDeleteUser(t *testing.T) {

@@ -15,11 +15,9 @@ func main() {
 	a++
 	fmt.Println(a)
 
-
 }
 
 //
 func func2(a int) {
 	fmt.Println("defer 打印 a = ", a)
 }
-

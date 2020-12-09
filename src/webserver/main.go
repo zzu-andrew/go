@@ -25,7 +25,7 @@ func main() {
 	//-------------------------------------
 	http.HandleFunc("/", fistPage)
 	err := http.ListenAndServe(":8000", nil)
-	if err != nil{
+	if err != nil {
 		fmt.Println("err.")
 	}
 }

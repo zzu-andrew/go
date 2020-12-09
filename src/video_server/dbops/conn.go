@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	dbConn  *sql.DB
+	dbConn *sql.DB
 	err    error
 )
 

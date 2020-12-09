@@ -7,7 +7,7 @@ import (
 
 func main() {
 	/*
-	time
+		time
 	*/
 	t1 := time.Now()
 	fmt.Println(t1)

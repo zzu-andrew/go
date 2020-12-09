@@ -7,7 +7,7 @@ import (
 
 func main() {
 	/*
-	临界资源
+		临界资源
 	*/
 	a := 1
 	go func() {
@@ -16,7 +16,7 @@ func main() {
 	}()
 
 	a = 3
-	time.Sleep(1*time.Second)
-	fmt.Println("main a -->",a)
+	time.Sleep(1 * time.Second)
+	fmt.Println("main a -->", a)
 	fmt.Println("race demo")
 }

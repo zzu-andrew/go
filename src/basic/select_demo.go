@@ -27,16 +27,14 @@ func main() {
 	case num1 := <-cha1:
 		fmt.Println(num1)
 	case num2, ok := <-cha2:
-		if ok{
+		if ok {
 			fmt.Println("num2 = ", num2)
-		}else {
+		} else {
 			fmt.Println("cha2 通道已关闭.....")
 		}
 	default:
 		fmt.Println("default")
 	}
-
-
 
 	fmt.Println("select demo")
 }

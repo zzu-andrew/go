@@ -31,8 +31,8 @@ func main() {
 	//	为了使种子不停的变化，可以使用时间戳
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < 10; i++ {
-	//	step2 调用生成随机数的函数
-		fmt.Println("-->",rand.Intn(100))
+		//	step2 调用生成随机数的函数
+		fmt.Println("-->", rand.Intn(100))
 	}
 
 }

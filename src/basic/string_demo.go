@@ -22,8 +22,7 @@ func main() {
 		fmt.Println(i, v)
 	}
 
-	fmt.Println(strings.Contains(s1,"s"))
-
+	fmt.Println(strings.Contains(s1, "s"))
 
 	fmt.Println("string demo")
 }

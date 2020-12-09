@@ -5,6 +5,20 @@ import (
 	"math"
 )
 
+type xPoint struct {
+	name string
+	age  int
+}
+
+// 结构体比较大的时候尽量使用指针的类型 进行构造函数
+// go语言中 构造函数都是以new开头的
+func newPoint(name string, age int) *xPoint {
+	return &xPoint{
+		name: name,
+		age:  age,
+	}
+}
+
 func main() {
 
 	//	for init; condition; post{}
@@ -49,5 +63,14 @@ func main() {
 			fmt.Println(k)
 		}
 	}
+
+	var a xPoint
+	b := &a
+	/*a.age = 36
+	a.name = "xi"*/
+	fmt.Printf("%p\n", b)
+	fmt.Printf("%p\n", &b)
+	fmt.Printf("%p\n", &a)
+	fmt.Printf("%x\n", b)
 
 }

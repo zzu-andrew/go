@@ -1,6 +1,5 @@
 package main
 
-
 /*
 1. 指定使用的数据库，use table_name
 2. 显示数据库中的所有表单数据 show tables

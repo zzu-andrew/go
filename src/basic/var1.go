@@ -21,17 +21,16 @@ func main() {
 	fmt.Print("var test")
 	// 使用类型腿短 := ,这种方式只能用于函数体内，不能用于全局变量的盛行声明
 	num4 := 45
-	fmt.Println("type = [%T]num4 = [%d]", num4,num4)
+	fmt.Println("type = [%T]num4 = [%d]", num4, num4)
 
 	// 变量集合声明
-	var(
+	var (
 		studentName = "xiaoming"
 		teacherName = "jianguo"
-		studentAge = 18
-		teacherAge = 28
+		studentAge  = 18
+		teacherAge  = 28
 	)
 	fmt.Println("student name = [%s] age = [%d], Teacher name = [%s] age = [%d]",
-			studentName, studentAge,teacherName,teacherAge)
-
+		studentName, studentAge, teacherName, teacherAge)
 
 }

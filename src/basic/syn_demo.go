@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"sync"
 )
+
 var wg sync.WaitGroup // 创建同步等待组
 func main() {
 

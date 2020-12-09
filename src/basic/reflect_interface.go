@@ -5,8 +5,6 @@ import (
 	"reflect"
 )
 
-
-
 type personStruc struct {
 	Name string
 	Age  int
@@ -23,7 +21,7 @@ func (p personStruc) PrintInfo() {
 
 func main() {
 
-	p1:= personStruc{"ruby", 20, "男"}
+	p1 := personStruc{"ruby", 20, "男"}
 	value := reflect.ValueOf(p1)
 	fmt.Printf("kind:%s, type: %s\n", value.Kind(), value.Type()) // kind:struct, type: main.personStruc
 
@@ -39,7 +37,7 @@ func main() {
 
 	//有参数
 	methodValue2 := value.MethodByName("Say")
-	args2:= []reflect.Value{reflect.ValueOf("反射机制")}
+	args2 := []reflect.Value{reflect.ValueOf("反射机制")}
 	methodValue2.Call(args2)
 	fmt.Println("reflect interface")
 }

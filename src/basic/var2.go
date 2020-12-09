@@ -13,16 +13,16 @@ func main() {
 	const PI = 3.14
 	const PATH string = "http:www.baidu.com"
 	fmt.Println(PATH)
-//	定义一组常量
-//	变量的集合
+	//	定义一组常量
+	//	变量的集合
 	const C1, C2, C3 = 100, 3, "haha"
 	const (
-		NAME = "xiaoming"
+		NAME     = "xiaoming"
 		LINKMODE = 1
 	)
 	// 一组常量，如果某个常量没有给初始值，就会默认和上一个常量保持一致的值
 	const (
-		a int  = 100
+		a int = 100
 		b
 		c string = "ruby"
 		d

@@ -34,14 +34,14 @@ func main() {
 
 	// 根据key只获取对应的value
 	fmt.Println(map1[2])
-	fmt.Println(map1[30])  // 不存在的只，或取出来是value类型的默认值
+	fmt.Println(map1[30]) // 不存在的只，或取出来是value类型的默认值
 
 	// value key
-	for index, value := range map1{
+	for index, value := range map1 {
 		fmt.Println(index, value)
 	}
 
-	v1:= map1[2]
+	v1 := map1[2]
 	fmt.Println(v1)
 
 	// 删除数据根据key来删除，如果key存在就删除， 如果不存在就不删除

@@ -35,7 +35,7 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(n)
-	b := make([]byte,9,100)
+	b := make([]byte, 9, 100)
 	// 指定开始的位置，否则读出来的文件是空的，因为写完之后光标在文件结尾
 	n2, err := file1.ReadAt(b, 0)
 	fmt.Println(n2)

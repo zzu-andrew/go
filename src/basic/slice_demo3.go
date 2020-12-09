@@ -45,8 +45,8 @@ func main() {
 	// 切片的添加也是一样的效果
 	fmt.Println("=======================================")
 	slice1 = append(slice1, 1, 1, 1, 1, 1, 1, 1)
-	fmt.Println(arr)  // 数组不变
-	fmt.Println(slice1)   // slice1新申请了块内存
+	fmt.Println(arr)    // 数组不变
+	fmt.Println(slice1) // slice1新申请了块内存
 	fmt.Println(slice2)
 	fmt.Println(slice3)
 	fmt.Printf("slice1 = %p, arr = %p\n", slice1, &arr)

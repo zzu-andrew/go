@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	// 面向对象OOP
 	// 1. 创建父类对象
-	p1 := Person{name:"zhangsan", age:30}
+	p1 := Person{name: "zhangsan", age: 30}
 	fmt.Println(p1.age, p1.name)
 	fmt.Println(p1)
 	// 创建子类对象
@@ -18,15 +18,15 @@ func main() {
 
 	fmt.Println("oop demo")
 }
+
 // 定义父类
 type Person struct {
 	name string
-	age int
+	age  int
 }
+
 // 定义子类
 type Student struct {
-	Person // 模拟继承结构
+	Person        // 模拟继承结构
 	school string // 子类的新增属性
 }
-
-

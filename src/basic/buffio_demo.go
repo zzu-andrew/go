@@ -6,6 +6,25 @@ import (
 	"os"
 )
 
+type animal struct {
+	eye  int
+	foot int
+}
+
+type dog struct {
+	animal
+	watch string
+}
+
+func (a *animal) animalInit() error {
+	return nil
+}
+
+func (d *dog) Watch() error {
+	fmt.Printf("%s\n", d.watch)
+	return nil
+}
+
 func main() {
 	fileName := "test.jpeg"
 	fmt.Println(fileName)
@@ -23,5 +42,10 @@ func main() {
 	fmt.Println(n1)
 	fmt.Println(string(p[:n1]))
 
+	var aDog dog
+	aDog.eye = 2
+	aDog.watch = "wang wang"
+	aDog.foot = 4
+	_ = aDog.Watch()
 
 }

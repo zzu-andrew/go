@@ -26,7 +26,6 @@ func main() {
 		fmt.Println(arg1, arg2)
 	}(1, 2)
 
-
 	// 带返回值的匿名函数
 	res1 := func(a, b int) int {
 		return a + b

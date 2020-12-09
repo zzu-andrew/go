@@ -10,7 +10,7 @@ func main() {
 
 	db, err := sql.Open("mysql",
 		"root:Wang.159@tcp(127.0.0.1:3306)/video_server?charset=utf8")
-//	db, err := sql.Open("mysql", "andrew:Wang.159@tcp(127.0.0.1:3306)/test?charset=utf8")
+	//	db, err := sql.Open("mysql", "andrew:Wang.159@tcp(127.0.0.1:3306)/test?charset=utf8")
 
 	stmtIns, err := db.Prepare("INSERT INTO users(login_name, pwd) VALUES (?, ?)")
 	if err != nil {
@@ -21,7 +21,6 @@ func main() {
 		fmt.Println(err.Error())
 	}
 	fmt.Println(result)
-
 
 	stmtOut, err := db.Prepare("SELECT pwd FROM users WHERE login_name=?")
 	if err != nil {
@@ -46,7 +45,7 @@ func main() {
 	fmt.Println("连接成功：", db)
 	errC := db.Close()
 	if err != nil {
-		fmt.Println(errC);
+		fmt.Println(errC)
 	}
 	fmt.Println("mysql test")
 }

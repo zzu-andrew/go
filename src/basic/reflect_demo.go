@@ -66,7 +66,7 @@ func GetMessage(input interface{}) {
 		fmt.Printf("字段名：%s, 字段类型：%s, 字段数据： %v \n", filed.Name, filed.Type, value)
 	}
 
-	for i:=0;i < getType.NumMethod();i++{
+	for i := 0; i < getType.NumMethod(); i++ {
 		method := getType.Method(i)
 		fmt.Printf("方法名称：%s, 方法类型：%v", method.Name, method.Type)
 	}

@@ -2,6 +2,6 @@ package pk1
 
 import "fmt"
 
-func MyTest(){
+func MyTest() {
 	fmt.Println("MyTest func ........")
 }

@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("pointer param")
 }
 
-func fun2(p1 *int){
+func fun2(p1 *int) {
 	fmt.Println(*p1)
 	*p1 = 30
 }
