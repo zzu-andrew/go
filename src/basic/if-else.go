@@ -21,10 +21,7 @@ func main() {
 		}
 	*/
 
-	if num := 10; num%2 == 0 {
-		fmt.Println("num is even", num)
-	} else {
-		fmt.Println("num is odd", num)
-	}
+	num := 10
+	fmt.Println("num is even", num)
 
 }

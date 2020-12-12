@@ -14,14 +14,11 @@ func main() {
 	fmt.Printf("num2 = %d\n", num2)
 	// 虽然go语言是静态余语言但是支持类型的自动判断
 	var num3 = 30
-	fmt.Println(
-		"num3 = %d",
-		num3,
-	)
+	fmt.Printf("num3 = %d\n", num3)
 	fmt.Print("var test")
 	// 使用类型腿短 := ,这种方式只能用于函数体内，不能用于全局变量的盛行声明
 	num4 := 45
-	fmt.Println("type = [%T]num4 = [%d]", num4, num4)
+	fmt.Printf("type = [%T]num4 = [%d]\n", num4, num4)
 
 	// 变量集合声明
 	var (
@@ -30,7 +27,7 @@ func main() {
 		studentAge  = 18
 		teacherAge  = 28
 	)
-	fmt.Println("student name = [%s] age = [%d], Teacher name = [%s] age = [%d]",
+	fmt.Printf("student name = [%s] age = [%d], Teacher name = [%s] age = [%d]\n",
 		studentName, studentAge, teacherName, teacherAge)
 
 }

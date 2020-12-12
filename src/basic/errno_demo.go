@@ -48,11 +48,11 @@ func main() {
 
 	fmt.Println("errno demo")
 }
-func checkAge(age int) error {
+func checkAge(age int) (err error) {
 	if age < 0 {
 		//return errors.New("年龄不合法")
-		err := fmt.Errorf("你给的年龄是%d,不合法", age)
-		return err
+		err = fmt.Errorf("你给的年龄是%d,不合法", age)
+		return
 	}
 	fmt.Println("年龄是：", age)
 	return nil

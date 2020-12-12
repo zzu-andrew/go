@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io"
-	"net/http"
 )
 
 func print1to20() int {
@@ -14,12 +12,12 @@ func print1to20() int {
 	return res
 }
 
-func fistPage(w http.ResponseWriter, r *http.Request) {
+/*func fistPage(w http.ResponseWriter, r *http.Request) {
 	n, err := io.WriteString(w, "<h1>Hello, this is my first page!</h1>")
 	if err != nil {
 		fmt.Println(n)
 	}
-}
+}*/
 
 func main() {
 
@@ -47,10 +45,12 @@ func main() {
 	fmt.Println(f)
 
 	//-------------------------------------
-	http.HandleFunc("/", fistPage)
+	/*http.HandleFunc("/", fistPage)
 	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
 		fmt.Println("err.")
-	}
+	}*/
+
+	//fmt.Println(runtime.NumCPU())
 	fmt.Println("array test")
 }
